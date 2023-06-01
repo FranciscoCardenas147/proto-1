@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ingrese el precio neto, para calcular el precio Venta</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   <div class="container">
+
+       <p>Ingrese el precio neto, para calcular el precio Venta</p>
+       
+       <label for="monto">Monto neto:</label>
+       <input type="number" id="monto" step="1">
+       
+       
+       
+       <label for="impuesto">Impuesto (%):</label>
+        <input type="number" id="ganancia" step="5">
+   
+    <!-- <button onclick="var monto = parseFloat(document.getElementById('monto').value);
+        let impuesto = 19;
+        let ganancia = 25;
+        let total = monto + (monto * (impuesto / 100)); 
+        let totalVenta = total +(total * (ganancia /100));
+        document.getElementById('resultado25').innerHTML = 'Este es el precio a Venta al 25% -> $' + totalVenta.toFixed(1)">Calcular Total al 25%</button> -->
+        
+        
+        <button onclick="calcularTotal()">Calcular Total</button>
+        <button onclick="calcularTotal25()">Calcular Total al 25%</button>
+        <button onclick="calcularTotal50()">Calcular Total al 50%</button>
+        <button onclick="calcularTotal75()">Calcular Total al 75%</button>
+        
+        
+        <p id="resultado"></p>
+        <p id="resultado25"></p>
+        <p id="resultado50"></p>
+        <p id="resultado75"></p>
+        
+    </div> 
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+
+  }
+
+body .container{
+
+  width: 80%;
+  margin: auto;
+  background-color: #e3e3e3;
+  padding: 10px;
+
+}
+
+  @media print {
+    @page { margin: 0;
+     size: auto; }
+}
