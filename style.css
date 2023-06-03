@@ -22,9 +22,5 @@ body .container {
   box-shadow: 1px 1px 5px black;
 }
 
-@media print {
-  @page {
-    margin: 0;
-    size: auto;
-  }
+
 }/*# sourceMappingURL=style.css.map */
